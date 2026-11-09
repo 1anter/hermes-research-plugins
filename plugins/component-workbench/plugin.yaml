@@ -1,0 +1,17 @@
+name: component-workbench
+version: 0.1.1
+description: Frozen candidate proposals, reproducible checks and review-only promotion
+  gate.
+author: ALI
+provides_tools:
+- workbench_propose
+- workbench_validate
+- workbench_freeze
+- workbench_review
+- workbench_status
+- workbench_diff
+provides_hooks: []
+license: MIT
+requires_hermes: '>=0.23.0'
+python_dependencies:
+- jsonschema>=4.0,<5

@@ -1,0 +1,14 @@
+name: evidence-history
+version: 0.2.1
+description: Local immutable evidence snapshots with explicit observation and publication
+  cutoffs.
+author: ALI
+provides_tools:
+- evidence_capture
+- evidence_as_of
+- evidence_history
+- evidence_compare
+- evidence_verify_support
+provides_hooks: []
+license: MIT
+requires_hermes: '>=0.23.0'

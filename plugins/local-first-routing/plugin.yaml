@@ -1,0 +1,11 @@
+name: local-first-routing
+version: 0.2.0
+description: Pinned local delegation with explicit manual escalation and no fallback.
+author: ALI
+provides_tools:
+- local_route_policy
+provides_hooks: []
+license: MIT
+requires_hermes: '>=0.23.0'
+python_dependencies:
+- jsonschema>=4.0,<5

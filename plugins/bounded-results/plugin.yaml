@@ -1,0 +1,12 @@
+name: bounded-results
+version: 0.1.1
+description: Bounded tool outputs with hash-addressed full-result retrieval.
+author: ALI
+provides_tools:
+- bounded_read
+provides_hooks:
+- transform_tool_result
+license: MIT
+requires_hermes: '>=0.23.0'
+python_dependencies:
+- jsonschema>=4.0,<5

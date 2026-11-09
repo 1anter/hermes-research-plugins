@@ -1,0 +1,22 @@
+name: evaluation-ledger
+version: 0.2.0
+description: Immutable artifact checks and privacy-minimized observer usage ledger.
+author: ALI
+provides_tools:
+- evaluation_artifact
+- evaluation_check
+- evaluation_report
+provides_hooks:
+- post_api_request
+- api_request_error
+- post_tool_call
+license: MIT
+requires_hermes: '>=0.23.0'
+python_dependencies:
+- jsonschema>=4.0,<5
+config_schema:
+  observe_usage:
+    type: bool
+    default: false
+    description: Explicit opt-in to local metadata/usage collection. No network export.
+      Restart the session after changing.
